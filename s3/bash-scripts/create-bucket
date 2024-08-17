@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ -z "$1" ]; then 
+    echo "No imput varible provided."
+    exit 1
+fi
+BUCKET_NAME=$1
+aws s3api create-bucket --bucket $1

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+   echo "No imput varible provided."
+   exit 1
+fi
+
+
+
+aws s3api delete-bucket --bucket $1
